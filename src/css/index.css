@@ -25,7 +25,7 @@ html {
 }
 
 .clearfix {
-  zoom: 1;
+  display: flow-root;
 }
 
 body {
