@@ -5,7 +5,9 @@ const Books = (function () {
     booksCount = books.length;
 
   function init() {
-    fetch('./db/VelikaIstoriyaYkrajni.txt')
+    fetch(
+      'https://raw.githubusercontent.com/Qweeqer/3dbookshowcase/main/src/db/books/VelikaIstoriyaYkrajni.txt'
+    )
       .then(response => response.text())
       .then(data => {
         const paragraphs = data.split('\n');
